@@ -1,0 +1,1794 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        var gform;
+        gform || (document.addEventListener("gform_main_scripts_loaded", function() {
+            gform.scriptsLoaded = !0
+        }), window.addEventListener("DOMContentLoaded", function() {
+            gform.domLoaded = !0
+        }), gform = {
+            domLoaded: !1,
+            scriptsLoaded: !1,
+            initializeOnLoaded: function(o) {
+                gform.domLoaded && gform.scriptsLoaded ? o() : !gform.domLoaded && gform.scriptsLoaded ? window.addEventListener("DOMContentLoaded", o) : document.addEventListener("gform_main_scripts_loaded", o)
+            },
+            hooks: {
+                action: {},
+                filter: {}
+            },
+            addAction: function(o, n, r, t) {
+                gform.addHook("action", o, n, r, t)
+            },
+            addFilter: function(o, n, r, t) {
+                gform.addHook("filter", o, n, r, t)
+            },
+            doAction: function(o) {
+                gform.doHook("action", o, arguments)
+            },
+            applyFilters: function(o) {
+                return gform.doHook("filter", o, arguments)
+            },
+            removeAction: function(o, n) {
+                gform.removeHook("action", o, n)
+            },
+            removeFilter: function(o, n, r) {
+                gform.removeHook("filter", o, n, r)
+            },
+            addHook: function(o, n, r, t, i) {
+                null == gform.hooks[o][n] && (gform.hooks[o][n] = []);
+                var e = gform.hooks[o][n];
+                null == i && (i = n + "_" + e.length), gform.hooks[o][n].push({
+                    tag: i,
+                    callable: r,
+                    priority: t = null == t ? 10 : t
+                })
+            },
+            doHook: function(n, o, r) {
+                var t;
+                if (r = Array.prototype.slice.call(r, 1), null != gform.hooks[n][o] && ((o = gform.hooks[n][o]).sort(function(o, n) {
+                        return o.priority - n.priority
+                    }), o.forEach(function(o) {
+                        "function" != typeof(t = o.callable) && (t = window[t]), "action" == n ? t.apply(null, r) : r[0] = t.apply(null, r)
+                    })), "filter" == n) return r[0]
+            },
+            removeHook: function(o, n, t, i) {
+                var r;
+                null != gform.hooks[o][n] && (r = (r = gform.hooks[o][n]).filter(function(o, n, r) {
+                    return !!(null != i && i != o.tag || null != t && t != o.priority)
+                }), gform.hooks[o][n] = r)
+            }
+        });
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOJUXEu6jmHXEvkW7NwXjFd0YmfFzcJsU"></script>
+
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+    <!-- This site is optimized with the Yoast SEO plugin v20.3 - https://yoast.com/wordpress/plugins/seo/ -->
+    <title>ANPR Cameras</title>
+    <meta name="description" content="MAV IQ ANPR Cameras – Spreading Intelligence to a wider audience The MAV IQ range has expanded its capabilities to exceed rivals in the Intelligent ANPR camera market with new models and an optional expansion module for peripherals."
+    />
+    <link rel="canonical" href="https://www.anprcameras.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ANPR Cameras" />
+    <meta property="og:description" content="MAV IQ ANPR Cameras – Spreading Intelligence to a wider audience The MAV IQ range has expanded its capabilities to exceed rivals in the Intelligent ANPR camera market with new models and an optional expansion module for peripherals."
+    />
+    <meta property="og:site_name" content="ANPR Cameras" />
+    <meta property="article:modified_time" content="2021-03-24T16:13:42+00:00" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" class="yoast-schema-graph">
+    </script>
+    <!-- / Yoast SEO plugin. -->
+
+
+    <link rel='dns-prefetch' href='//www.google.com' />
+    <link rel="alternate" type="application/rss+xml" title="ANPR Cameras &raquo; Feed" href="https://www.anprcameras.com/feed/" />
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/www.anprcameras.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.3"
+            }
+        };
+        /*! This file is auto-generated */
+        ! function(e, a, t) {
+            var n, r, o, i = a.createElement("canvas"),
+                p = i.getContext && i.getContext("2d");
+
+            function s(e, t) {
+                var a = String.fromCharCode,
+                    e = (p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0), i.toDataURL());
+                return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
+            }
+
+            function c(e) {
+                var t = a.createElement("script");
+                t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+            }
+            for (o = Array("flag", "emoji"), t.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+                if (p && p.fillText) switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+                    case "flag":
+                        return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
+                    case "emoji":
+                        return !s([129777, 127995, 8205, 129778, 127999], [129777, 127995, 8203, 129778, 127999])
+                }
+                return !1
+            }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
+                t.DOMReady = !0
+            }, t.supports.everything || (n = function() {
+                t.readyCallback()
+            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
+                "complete" === a.readyState && t.readyCallback()
+            })), (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='https://www.anprcameras.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='classic-theme-styles-css' href='https://www.anprcameras.com/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        body .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        body .is-layout-flex>* {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .wp-block-navigation a:where(:not(.wp-element-button)) {
+            color: inherit;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        .wp-block-pullquote {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='flexible_modules-css' href='https://www.anprcameras.com/wp-content/plugins/flexible_modules/public/css/flexible_modules-public.css?ver=1.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='mav-systems-style-css' href='https://www.anprcameras.com/wp-content/themes/mav-systems/style.css?ver=6.1.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='slick-css-css' href='https://www.anprcameras.com/wp-content/themes/mav-systems/css/slick.css?ver=6.1.3' type='text/css' media='all' />
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-content/plugins/flexible_modules/public/js/flexible_modules-public.js?ver=1.0.0' id='flexible_modules-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-content/themes/mav-systems/js/navigation.js?ver=1684993872' id='mav-systems-navigation-js'></script>
+    <link rel="https://api.w.org/" href="https://www.anprcameras.com/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://www.anprcameras.com/wp-json/wp/v2/pages/7" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.anprcameras.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.anprcameras.com/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 6.1.3" />
+    <link rel='shortlink' href='https://www.anprcameras.com/' />
+    <link rel="alternate" type="application/json+oembed" href="https://www.anprcameras.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.anprcameras.com%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://www.anprcameras.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.anprcameras.com%2F&#038;format=xml" />
+    <script>
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    </script>
+    <style>
+        .no-js img.lazyload {
+            display: none;
+        }
+
+        figure.wp-block-image img.lazyloading {
+            min-width: 150px;
+        }
+
+        .lazyload,
+        .lazyloading {
+            opacity: 0;
+        }
+
+        .lazyloaded {
+            opacity: 1;
+            transition: opacity 400ms;
+            transition-delay: 0ms;
+        }
+    </style>
+    <style type="text/css">
+        .site-title,
+        .site-description {
+            position: absolute;
+            clip: rect(1px, 1px, 1px, 1px);
+        }
+    </style>
+    <link rel="icon" href="https://www.anprcameras.com/wp-content/uploads/2021/03/favicon-icon-150x150.jpg" sizes="32x32" />
+    <link rel="icon" href="https://www.anprcameras.com/wp-content/uploads/2021/03/favicon-icon-300x300.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://www.anprcameras.com/wp-content/uploads/2021/03/favicon-icon-300x300.jpg" />
+    <meta name="msapplication-TileImage" content="https://www.anprcameras.com/wp-content/uploads/2021/03/favicon-icon-300x300.jpg" />
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-10328193-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</head>
+
+<body class="home page-template page-template-front-page page-template-front-page-php page page-id-7 home-page-body">
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5e6639bdc32b5c19173a5d95/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+
+    <div id="page" class="site">
+        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+        <header id="masthead" class="site-header">
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="underline"></div>
+                    <div class="site-branding">
+                        <a href="https://www.anprcameras.com">
+						<img   data-src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/logo.svg" class="custom-logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/logo.svg" class="custom-logo"></noscript>
+					</a>
+                    </div>
+                    <!-- .site-branding -->
+
+                    <div class="align-center">
+                        <nav id="site-navigation" class="main-navigation">
+                            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
+                            <div class="menu-main-menu-container">
+                                <ul id="primary-menu" class="menu">
+                                    <li id="menu-item-4584" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4584"><a href="#">Products</a></li>
+                                    <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-30"><a href="https://www.anprcameras.com/anpr-solutions/">Solutions</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-4464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4464"><a href="https://www.anprcameras.com/anpr-solutions/police-security/">Police &#038; Security</a></li>
+                                            <li id="menu-item-4463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4463"><a href="https://www.anprcameras.com/anpr-solutions/car-park-management/">Car Park Management</a></li>
+                                            <li id="menu-item-4462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4462"><a href="https://www.anprcameras.com/anpr-solutions/smart-cities/">Smart Cities</a></li>
+                                            <li id="menu-item-4465" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4465"><a href="https://www.anprcameras.com/anpr-solutions/civil-enforcement/">Civil Enforcement</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-4262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4262"><a href="https://www.anprcameras.com/mav-worldwide/">MAV Worldwide</a></li>
+                                    <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24"><a href="https://www.anprcameras.com/about-us/">About Us</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-4976" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4976"><a href="https://www.anprcameras.com/about-us/">About Us</a></li>
+                                            <li id="menu-item-4411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4411"><a href="https://www.anprcameras.com/about-us/the-company/">The Company</a></li>
+                                            <li id="menu-item-4975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4975"><a href="https://www.anprcameras.com/about-us/mav-technology/">MAV Technology</a></li>
+                                            <li id="menu-item-4375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4375"><a href="https://www.anprcameras.com/about-us/understanding-anpr/">Understanding ANPR</a></li>
+                                            <li id="menu-item-5839" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5839"><a href="https://www.anprcameras.com/about-us/policies/">Policies</a></li>
+                                            <li id="menu-item-5840" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5840"><a href="https://www.anprcameras.com/about-us/artificial-intelligence-in-anpr-technology/">Artificial Intelligence in ANPR Technology</a></li>
+                                            <li id="menu-item-5897" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5897"><a href="https://www.anprcameras.com/about-us/group-corporate-social-responsibility/">Group Corporate Social Responsibility</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://www.anprcameras.com/contact-us/">Contact Us</a></li>
+                                    <li id="menu-item-5778" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5778"><a href="https://support.anprcameras.com">Support</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-5788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5788"><a href="https://www.anprcameras.com/support/becoming-our-technology-partner/">Becoming our Technology Partner</a></li>
+                                            <li id="menu-item-4709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4709"><a href="https://www.anprcameras.com/support/faqs/">FAQ&#8217;s</a></li>
+                                            <li id="menu-item-4710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4710"><a href="https://www.anprcameras.com/support/resources/">Datasheets</a></li>
+                                            <li id="menu-item-4977" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4977"><a href="https://www.anprcameras.com/partner-resources/">Partner Resources</a></li>
+                                            <li id="menu-item-4713" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4713"><a href="https://www.anprcameras.com/support/rma/">RMA Form</a></li>
+                                            <li id="menu-item-4711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4711"><a href="https://www.anprcameras.com/support/part-numbers/">Part Numbers</a></li>
+                                            <li id="menu-item-4712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4712"><a href="https://www.anprcameras.com/support/anpralpr-definitions/">Definitions</a></li>
+                                            <li id="menu-item-5982" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5982"><a href="https://www.anprcameras.com/anpr-support-site-video-demo/">Support App</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-5555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5555"><a href="https://www.anprcameras.com/media/">Media</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-4257" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4257"><a href="https://www.anprcameras.com/category/news/">News</a></li>
+                                            <li id="menu-item-4276" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4276"><a href="https://www.anprcameras.com/category/blog/">Blog</a></li>
+                                            <li id="menu-item-4618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4618"><a href="https://www.anprcameras.com/videos/">Videos</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="additional-menu">
+                                <li>
+                                    <span class="telephone"><i class="fa fa-phone"></i></span>
+                                    <ul class="sub-menu">
+                                        <li><a href="tel:+443338003050">+44 333 800 3050</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="email"><i class="fa fa-envelope-o"></i></span>
+                                    <ul class="sub-menu">
+                                        <li><a href="mailto:anpr@anprcameras.com">anpr@anprcameras.com</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- #site-navigation -->
+                    </div>
+
+                    <div class="megamenu">
+                        <div class="row">
+                            <div class="nine columns no-pad">
+                                <div class="whitebg">
+                                    <div class="row">
+                                        <div class="three columns">
+                                            <h2><a href="https://www.anprcameras.com/iqx-range/">IQX Range</a></h2>
+                                            <span>All-in-one Intelligent ANPR Cameras</span>
+
+                                            <ul>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/aiqnano/">AiQ:Nano</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iq350xp/">IQ:350XP</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iq350xr/">IQ:350XR</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iq250xr/">IQ:250XR</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iq350x/">IQ:350X</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iq250x/">IQ:250X</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iq230x/">IQ:230X</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iq130x/">IQ:130X</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iq130xv/">IQ:130XV</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="three columns">
+                                            <h2><a href="https://www.anprcameras.com/iq-range/">IQ Range</a></h2>
+                                            <span>Multi-application Intelligent ANPR Cameras</span>
+
+                                            <ul>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iq350/">IQ:350</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iq250/">IQ:250</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iq150/">IQ:150</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="three columns">
+                                            <h2><a href="https://www.anprcameras.com/rapier-range/">Rapier Range</a></h2>
+                                            <span>High performance mobile and fixed ANPR Cameras</span>
+
+                                            <ul>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/rapier-35p/">Rapier 35P</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/rapier-35-362/">Rapier 35P/362</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/rapier-55/">Rapier 55</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/rapier-30-hd/">Rapier 30 HD</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/rapier-30hd-dual/">Rapier 30HD Dual</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/rapier-50-hd/">Rapier 50 HD</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="three columns">
+                                            <h2><a href="https://www.anprcameras.com/anpr-products/tailored-cameras/">Tailored Cameras</a></h2>
+                                            <span>Bespoke cameras through specialist design</span>
+
+                                            <ul>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/iqgps/">IQ:GPS</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/sabre-15/">Sabre 15</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/rapier-50-hdz/">Rapier 50 HDZ</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/rapier-52/">Rapier 52</a></li>
+                                                <li><a href="https://www.anprcameras.com/anpr-product/rapier-45p/">Rapier 45P</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="three columns no-pad">
+                                <div class="greybg">
+
+                                    <a href="https://www.anprcameras.com/anpr-products/mav-iq-intelligent-anpr-cameras/">
+                                        <div class="inner-parent-category">
+                                            <h2>Intelligent Cameras</h2>
+                                            <span>All-in-one High speed intelligent ANPR solutions</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://www.anprcameras.com/anpr-products/hd-cameras/">
+                                        <div class="inner-parent-category">
+                                            <h2>HD Cameras</h2>
+                                            <span>High Definition ANPR for day/night operation</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://www.anprcameras.com/anpr-products/analogue-cameras/">
+                                        <div class="inner-parent-category">
+                                            <h2>Analogue Cameras</h2>
+                                            <span>High quality ANPR for new and legacy systems</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://www.anprcameras.com/anpr-products/tailored-cameras/">
+                                        <div class="inner-parent-category">
+                                            <h2>Tailored Cameras</h2>
+                                            <span>Bespoke cameras through specialist design</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://www.anprcameras.com/anpr-products/ip-cameras/">
+                                        <div class="inner-parent-category">
+                                            <h2>IP Cameras</h2>
+                                            <span>Network Enabled ANPR</span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="twelve columns no-pad">
+                                <div class="bottom gradient-border-btn">
+                                    <a href="https://www.anprcameras.com/find-your-anpr-camera/">Unsure which camera you need? Click here to find your camera.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- #masthead -->
+
+        <div class="sidebar">
+            <div class="whitebg">
+                <div class="exit">&times;</div>
+                <img data-src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/mavsidebar.svg" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/mavsidebar.svg"></noscript>
+                <h2>Enquiry</h2>
+                <script type="text/javascript"></script>
+                <div class='gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_3'>
+                    <form method='post' enctype='multipart/form-data' id='gform_3' action='/' data-formid='3'>
+                        <div class='gf_invisible ginput_recaptchav3' data-sitekey='6LdZ8VYdAAAAAP22sjc2iMZ-E-_39RSZhugwDxbr' data-tabindex='0'><input id="input_caf731380c5ac593521ecdbabc01632a" class="gfield_recaptcha_response" type="hidden" name="input_caf731380c5ac593521ecdbabc01632a" value="" /></div>
+                        <div class='gform-body gform_body'>
+                            <ul id='gform_fields_3' class='gform_fields top_label form_sublabel_below description_below'>
+                                <li id="field_3_3" class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_3_3"><label class='gfield_label gform-field-label' for='input_3_3'>Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                    <div class='ginput_container ginput_container_text'><input name='input_3' id='input_3_3' type='text' value='' class='medium' placeholder='Your Name*' aria-required="true" aria-invalid="false" /> </div>
+                                </li>
+                                <li id="field_3_4" class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_3_4"><label class='gfield_label gform-field-label' for='input_3_4'>Telephone<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                    <div class='ginput_container ginput_container_text'><input name='input_4' id='input_3_4' type='text' value='' class='medium' placeholder='Your Telephone*' aria-required="true" aria-invalid="false" /> </div>
+                                </li>
+                                <li id="field_3_1" class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_3_1"><label class='gfield_label gform-field-label' for='input_3_1'>Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                    <div class='ginput_container ginput_container_text'><input name='input_1' id='input_3_1' type='text' value='' class='medium' placeholder='Your Email*' aria-required="true" aria-invalid="false" /> </div>
+                                </li>
+                                <li id="field_3_2" class="gfield gfield--type-textarea field_sublabel_below gfield--has-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_3_2"><label class='gfield_label gform-field-label' for='input_3_2'>Message</label>
+                                    <div class='ginput_container ginput_container_textarea'><textarea name='input_2' id='input_3_2' class='textarea medium' aria-describedby="gfield_description_3_2" placeholder='Your Message*' aria-invalid="false" rows='10' cols='50'></textarea></div>
+                                    <div class='gfield_description'
+                                        id='gfield_description_3_2'>By completing and sending this enquiry form you consent to being contacted by MAV Systems Ltd using the information provided. If, at any time, you wish to update your information or be removed from our records please
+                                        notify us via anpr@anprcameras.com.</div>
+                                </li>
+                                <li id="field_3_5" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below gfield_visibility_visible" data-js-reload="field_3_5"><label class='gfield_label gform-field-label' for='input_3_5'>Email</label>
+                                    <div class='ginput_container'><input name='input_5' id='input_3_5' type='text' value='' /></div>
+                                    <div class='gfield_description' id='gfield_description_3_5'>This field is for validation purposes and should be left unchanged.</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_3' class='gform_button button' value='Submit' onclick='if(window["gf_submitting_3"]){return false;}  window["gf_submitting_3"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_3"]){return false;} window["gf_submitting_3"]=true;  jQuery("#gform_3").trigger("submit",[true]); }'
+                            />
+                            <input type='hidden' class='gform_hidden' name='is_submit_3' value='1' />
+                            <input type='hidden' class='gform_hidden' name='gform_submit' value='3' />
+
+                            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+                            <input type='hidden' class='gform_hidden' name='state_3' value='WyJbXSIsIjA3MzA3MDA4OGI1MmFkMTMyMWJkN2E3N2ZiODJmZDdmIl0=' />
+                            <input type='hidden' class='gform_hidden' name='gform_target_page_number_3' id='gform_target_page_number_3' value='0' />
+                            <input type='hidden' class='gform_hidden' name='gform_source_page_number_3' id='gform_source_page_number_3' value='1' />
+                            <input type='hidden' name='gform_field_values' value='' />
+
+                        </div>
+                        <p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="121" />
+                            <script>
+                                document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());
+                            </script>
+                        </p>
+                    </form>
+                </div>
+                <script type="text/javascript">
+                    gform.initializeOnLoaded(function() {
+                        gformInitSpinner(3, 'https://www.anprcameras.com/wp-content/plugins/gravityforms/images/spinner.svg', true);
+                        jQuery('#gform_ajax_frame_3').on('load', function() {
+                            var contents = jQuery(this).contents().find('*').html();
+                            var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;
+                            if (!is_postback) {
+                                return;
+                            }
+                            var form_content = jQuery(this).contents().find('#gform_wrapper_3');
+                            var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_3').length > 0;
+                            var is_redirect = contents.indexOf('gformRedirect(){') >= 0;
+                            var is_form = form_content.length > 0 && !is_redirect && !is_confirmation;
+                            var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;
+                            if (is_form) {
+                                jQuery('#gform_wrapper_3').html(form_content.html());
+                                if (form_content.hasClass('gform_validation_error')) {
+                                    jQuery('#gform_wrapper_3').addClass('gform_validation_error');
+                                } else {
+                                    jQuery('#gform_wrapper_3').removeClass('gform_validation_error');
+                                }
+                                setTimeout(function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ }, 50);
+                                if (window['gformInitDatepicker']) {
+                                    gformInitDatepicker();
+                                }
+                                if (window['gformInitPriceFields']) {
+                                    gformInitPriceFields();
+                                }
+                                var current_page = jQuery('#gform_source_page_number_3').val();
+                                gformInitSpinner(3, 'https://www.anprcameras.com/wp-content/plugins/gravityforms/images/spinner.svg', true);
+                                jQuery(document).trigger('gform_page_loaded', [3, current_page]);
+                                window['gf_submitting_3'] = false;
+                            } else if (!is_redirect) {
+                                var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();
+                                if (!confirmation_content) {
+                                    confirmation_content = contents;
+                                }
+                                setTimeout(function() {
+                                    jQuery('#gform_wrapper_3').replaceWith(confirmation_content);
+                                    jQuery(document).trigger('gform_confirmation_loaded', [3]);
+                                    window['gf_submitting_3'] = false;
+                                    wp.a11y.speak(jQuery('#gform_confirmation_message_3').text());
+                                }, 50);
+                            } else {
+                                jQuery('#gform_3').append(contents);
+                                if (window['gformRedirect']) {
+                                    gformRedirect();
+                                }
+                            }
+                            jQuery(document).trigger('gform_post_render', [3, current_page]);
+                            gform.utils.trigger({
+                                event: 'gform/postRender',
+                                native: false,
+                                data: {
+                                    formId: 3,
+                                    currentPage: current_page
+                                }
+                            });
+                        });
+                    });
+                </script>
+            </div>
+            <img data-src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/enquirebtn.svg" class="enquire-btn lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="enquire-btn" src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/enquirebtn.svg"></noscript>
+        </div>
+
+        <div class="mobilemenu">
+            <div class="inner">
+                <div class="row">
+                    <div class="six columns">
+                        <span>Menu /</span>
+                    </div>
+                    <div class="six columns">
+                        <div class="exit">&times;</div>
+                    </div>
+                </div>
+                <div class="menu-mobile-menu-container">
+                    <ul id="mobile-menu" class="menu">
+                        <li id="menu-item-5602" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5602"><a href="#">Products</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-5737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5737"><a href="https://www.anprcameras.com/iqx-range/">IQX Range</a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-5636" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5636"><a href="https://www.anprcameras.com/anpr-product/iq130x/">IQ:130X</a></li>
+                                        <li id="menu-item-5637" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5637"><a href="https://www.anprcameras.com/anpr-product/iq250x/">IQ:250X</a></li>
+                                        <li id="menu-item-5638" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5638"><a href="https://www.anprcameras.com/anpr-product/iq350x/">IQ:350X</a></li>
+                                        <li id="menu-item-5640" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5640"><a href="https://www.anprcameras.com/anpr-product/iq250xr/">IQ:250XR</a></li>
+                                        <li id="menu-item-5641" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5641"><a href="https://www.anprcameras.com/anpr-product/iq350xr/">IQ:350XR</a></li>
+                                        <li id="menu-item-5642" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5642"><a href="https://www.anprcameras.com/anpr-product/iq350xp/">IQ:350XP</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-5634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5634"><a href="https://www.anprcameras.com/iq-range/">IQ Range</a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-5652" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5652"><a href="https://www.anprcameras.com/anpr-product/iq150/">IQ:150</a></li>
+                                        <li id="menu-item-5653" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5653"><a href="https://www.anprcameras.com/anpr-product/iq250/">IQ:250</a></li>
+                                        <li id="menu-item-5654" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5654"><a href="https://www.anprcameras.com/anpr-product/iq350/">IQ:350</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-5662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5662"><a href="https://www.anprcameras.com/rapier-range/">Rapier Range</a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-5646" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5646"><a href="https://www.anprcameras.com/anpr-product/rapier-35p/">Rapier 35P</a></li>
+                                        <li id="menu-item-5647" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5647"><a href="https://www.anprcameras.com/anpr-product/rapier-35-362/">Rapier 35P/362</a></li>
+                                        <li id="menu-item-5651" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5651"><a href="https://www.anprcameras.com/anpr-product/rapier-55/">Rapier 55</a></li>
+                                        <li id="menu-item-5644" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5644"><a href="https://www.anprcameras.com/anpr-product/rapier-30-hd/">Rapier 30 HD</a></li>
+                                        <li id="menu-item-5645" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5645"><a href="https://www.anprcameras.com/anpr-product/rapier-30hd-dual/">Rapier 30HD Dual</a></li>
+                                        <li id="menu-item-5648" class="menu-item menu-item-type-post_type menu-item-object-products menu-item-5648"><a href="https://www.anprcameras.com/anpr-product/rapier-50-hd/">Rapier 50 HD</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-5603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5603"><a href="https://www.anprcameras.com/anpr-solutions/">Solutions</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-5604" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5604"><a href="https://www.anprcameras.com/anpr-solutions/police-security/">Police &#038; Security</a></li>
+                                <li id="menu-item-5605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5605"><a href="https://www.anprcameras.com/anpr-solutions/car-park-management/">Car Park Management</a></li>
+                                <li id="menu-item-5606" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5606"><a href="https://www.anprcameras.com/anpr-solutions/smart-cities/">Smart Cities</a></li>
+                                <li id="menu-item-5607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5607"><a href="https://www.anprcameras.com/anpr-solutions/civil-enforcement/">Civil Enforcement</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-5608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5608"><a href="https://www.anprcameras.com/mav-worldwide/">MAV Worldwide</a></li>
+                        <li id="menu-item-5609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5609"><a href="https://www.anprcameras.com/about-us/">About Us</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-5610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5610"><a href="https://www.anprcameras.com/about-us/">About Us</a></li>
+                                <li id="menu-item-5611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5611"><a href="https://www.anprcameras.com/about-us/the-company/">The Company</a></li>
+                                <li id="menu-item-5612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5612"><a href="https://www.anprcameras.com/about-us/mav-technology/">MAV Technology</a></li>
+                                <li id="menu-item-5613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5613"><a href="https://www.anprcameras.com/about-us/understanding-anpr/">Understanding ANPR</a></li>
+                                <li id="menu-item-5614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5614"><a href="https://www.anprcameras.com/conflict-minerals-policy/">Conflict Minerals Policy</a></li>
+                                <li id="menu-item-5615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5615"><a href="https://www.anprcameras.com/about-us/data-protection-gdpr/">Data Protection – GDPR Policy</a></li>
+                                <li id="menu-item-5616" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5616"><a href="https://www.anprcameras.com/equal-opportunities-policy/">Equal Opportunities Policy</a></li>
+                                <li id="menu-item-5617" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5617"><a href="https://www.anprcameras.com/anti-slavery-policy-statement/">Anti-Slavery Policy Statement</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-5618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5618"><a href="https://www.anprcameras.com/contact-us/">Contact Us</a></li>
+                        <li id="menu-item-5721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5721"><a href="https://www.anprcameras.com/support/">Support</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-5620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5620"><a href="https://www.anprcameras.com/support/faqs/">FAQ&#8217;s</a></li>
+                                <li id="menu-item-5621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5621"><a href="https://www.anprcameras.com/support/resources/">Datasheets</a></li>
+                                <li id="menu-item-5622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5622"><a href="https://www.anprcameras.com/partner-resources/">Partner Resources</a></li>
+                                <li id="menu-item-5623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5623"><a href="https://www.anprcameras.com/support/rma/">RMA Form</a></li>
+                                <li id="menu-item-5624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5624"><a href="https://www.anprcameras.com/support/part-numbers/">Part Numbers</a></li>
+                                <li id="menu-item-5625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5625"><a href="https://www.anprcameras.com/support/anpralpr-definitions/">Definitions</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-5626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5626"><a href="https://www.anprcameras.com/media/">Media</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-5627" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5627"><a href="https://www.anprcameras.com/category/news/">News</a></li>
+                                <li id="menu-item-5628" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5628"><a href="https://www.anprcameras.com/category/blog/">Blog</a></li>
+                                <li id="menu-item-5629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5629"><a href="https://www.anprcameras.com/videos/">Videos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="site-content">
+
+            <div id="primary" class="content-area">
+                <main id="main" class="site-main">
+
+
+                    <article id="post-7" class="post-7 page type-page status-publish hentry">
+
+                        <div class="homepage-banner">
+                            <h1>MAV SYSTEMS</h1>
+                            <h2>HOME OF Intelligent ANPR Cameras</h2>
+                        </div>
+
+                        <div class="camera-range">
+                            <div class="row row-fluid" id="camera-range-slick">
+                                <div class="four columns placeholder"></div>
+
+
+
+
+                                <div class="four columns camera-product-wrapper one-camera">
+                                    <img data-src='https://www.anprcameras.com/wp-content/uploads/2021/02/iqx.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img  data-src='https://www.anprcameras.com/wp-content/uploads/2021/02/iqx.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img src="https://www.anprcameras.com/wp-content/uploads/2021/02/iqx.png"></noscript></noscript>
+                                </div>
+
+
+
+                                <div class="four columns spacer">
+                                    <div class="full-size">
+                                        <div class="align-center">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="four columns camera-product-wrapper two-camera">
+                                    <img data-src='https://www.anprcameras.com/wp-content/uploads/2019/11/MAV-White-Camera-1-094.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img  data-src='https://www.anprcameras.com/wp-content/uploads/2019/11/MAV-White-Camera-1-094.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img src="https://www.anprcameras.com/wp-content/uploads/2019/11/MAV-White-Camera-1-094.png"></noscript></noscript>
+                                </div>
+
+
+
+                                <div class="four columns spacer">
+                                    <div class="full-size">
+                                        <div class="align-center">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="four columns camera-product-wrapper three-camera">
+                                    <img data-src='https://www.anprcameras.com/wp-content/uploads/2019/11/330-HD-IP-Camera.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img  data-src='https://www.anprcameras.com/wp-content/uploads/2019/11/330-HD-IP-Camera.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img src="https://www.anprcameras.com/wp-content/uploads/2019/11/330-HD-IP-Camera.png"></noscript></noscript>
+                                </div>
+
+
+
+                                <div class="four columns placeholder"></div>
+                            </div>
+
+                            <div class="one-camera-content camera-content">
+                                <div class="row">
+                                    <div class="twelve columns">
+                                        <header>
+                                            <h2>IQX Range</h2>
+                                        </header>
+
+                                        <p>Continuing to offer HD image quality, high speed ANPR recognition, zoom capability and long range pulsed IR lighting, the IQX range has evolved to include dual processors, enclosed router and a combination of both
+                                            all within a single housing. Building upon the superior foundation of the IQ series, the IQX range provides a higher benchmark in performance and quality, whilst boasting market leading functionality, flexibility
+                                            and accuracy.</p>
+
+                                        <a class="gradient-border-btn" href="https://www.anprcameras.com/iqx-range/">
+								<span>View this range</span>
+							</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="two-camera-content camera-content">
+                                <div class="row">
+                                    <div class="twelve columns">
+                                        <header>
+                                            <h2>IQ Range</h2>
+                                        </header>
+
+                                        <p>Incorporating HD image quality, high speed ANPR recognition, zoom capability and long range pulsed IR lighting into one efficient unit, the MAV IQ range sets new standards for intelligent ANPR cameras. MAV’s superior
+                                            intelligent ANPR cameras combine the pedigree of our HD and Analogue ranges alongside a powerful, yet eco friendly, ANPR processor to create formidable all-in-one ANPR cameras, the MAV IQ range. These cameras
+                                            set new benchmarks in easy installation, long life, low maintenance, high quality and superb ANPR recognition.</p>
+
+                                        <a class="gradient-border-btn" href="https://www.anprcameras.com/iq-range/">
+								<span>View this range</span>
+							</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="three-camera-content camera-content">
+                                <div class="row">
+                                    <div class="twelve columns">
+                                        <header>
+                                            <h2>Rapier</h2>
+                                        </header>
+
+                                        <p>The Rapier range provides compatibility with existing ANPR infrastructure. All of our cameras use electronic zoom truEZoom™ to provide the greatest flexibility at installation. In addition the built in maxIRange™
+                                            synchronised pulsed IR provides industry leading performance. Our Rapier range of cameras and IR illumination combinations provide a choice of single camera day/night operation Sabre or Rapier Mono bandpass
+                                            IR ANPR and Rapier Dual with a separate colour overview. Available in many formats including x 12 Zoom x 37 Zoom all cameras are available in 25/50 fps composite video output, supplied with AVML camera control
+                                            for ease of set-up this range of cameras can be used for both fixed and mobile situations.</p>
+
+                                        <a class="gradient-border-btn" href="https://www.anprcameras.com/rapier-range/">
+								<span>View this range</span>
+							</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="camera-range-mobile">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <div class="mobile-wrapper">
+                                        <img data-src='https://www.anprcameras.com/wp-content/uploads/2021/02/iqx.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img  data-src='https://www.anprcameras.com/wp-content/uploads/2021/02/iqx.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img src="https://www.anprcameras.com/wp-content/uploads/2021/02/iqx.png"></noscript></noscript>
+                                        <h2>IQX Range</h2>
+                                        <p>Continuing to offer HD image quality, high speed ANPR recognition, zoom capability and long range pulsed IR lighting, the IQX range has evolved to include dual processors, enclosed router and a combination of both
+                                            all within a single housing. Building upon the superior foundation of the IQ series, the IQX range provides a higher benchmark in performance and quality, whilst boasting market leading functionality, flexibility
+                                            and accuracy.</p>
+                                        <a class="gradient-border-btn" href="https://www.anprcameras.com/iqx-range/">
+							<span>View this range</span>
+						</a>
+                                    </div>
+                                    <div class="mobile-wrapper">
+                                        <img data-src='https://www.anprcameras.com/wp-content/uploads/2019/11/MAV-White-Camera-1-094.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img  data-src='https://www.anprcameras.com/wp-content/uploads/2019/11/MAV-White-Camera-1-094.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img src="https://www.anprcameras.com/wp-content/uploads/2019/11/MAV-White-Camera-1-094.png"></noscript></noscript>
+                                        <h2>IQ Range</h2>
+                                        <p>Incorporating HD image quality, high speed ANPR recognition, zoom capability and long range pulsed IR lighting into one efficient unit, the MAV IQ range sets new standards for intelligent ANPR cameras. MAV’s superior
+                                            intelligent ANPR cameras combine the pedigree of our HD and Analogue ranges alongside a powerful, yet eco friendly, ANPR processor to create formidable all-in-one ANPR cameras, the MAV IQ range. These cameras
+                                            set new benchmarks in easy installation, long life, low maintenance, high quality and superb ANPR recognition.</p>
+                                        <a class="gradient-border-btn" href="https://www.anprcameras.com/iq-range/">
+							<span>View this range</span>
+						</a>
+                                    </div>
+                                    <div class="mobile-wrapper">
+                                        <img data-src='https://www.anprcameras.com/wp-content/uploads/2019/11/330-HD-IP-Camera.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img  data-src='https://www.anprcameras.com/wp-content/uploads/2019/11/330-HD-IP-Camera.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img src="https://www.anprcameras.com/wp-content/uploads/2019/11/330-HD-IP-Camera.png"></noscript></noscript>
+                                        <h2>Rapier</h2>
+                                        <p>The Rapier range provides compatibility with existing ANPR infrastructure. All of our cameras use electronic zoom truEZoom™ to provide the greatest flexibility at installation. In addition the built in maxIRange™
+                                            synchronised pulsed IR provides industry leading performance. Our Rapier range of cameras and IR illumination combinations provide a choice of single camera day/night operation Sabre or Rapier Mono bandpass
+                                            IR ANPR and Rapier Dual with a separate colour overview. Available in many formats including x 12 Zoom x 37 Zoom all cameras are available in 25/50 fps composite video output, supplied with AVML camera control
+                                            for ease of set-up this range of cameras can be used for both fixed and mobile situations.</p>
+                                        <a class="gradient-border-btn" href="https://www.anprcameras.com/rapier-range/">
+							<span>View this range</span>
+						</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-us">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="twelve columns">
+                                                <header>
+                                                    <h2>MAV Systems is a provider of superior ANPR cameras throughout the world</h2>
+                                                </header>
+
+                                                <p style="text-align: center;"><strong>We work with our partners to meet their specific needs and ensure we provide the highest quality standards of products and service.</strong></p>
+                                                <p style="text-align: center;">With year on year growth in production and development. Such success has only been made possible through the development of strong partnerships with businesses across the globe.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-fluid">
+                                <div class="twelve columns">
+
+                                    <div class="information_node" data-id="1">
+                                        <h2>Experience you can rely on</h2>
+                                        <p>MAV Systems is a specialist ANPR and surveillance camera technology provider to users worldwide. We have in-house design expertise spanning over 30 years of video solutions in covert and overt operations.</p>
+                                    </div>
+                                    <div class="information_node" data-id="2">
+                                        <h2>High Quality Service</h2>
+                                        <p>At MAV we pride ourselves on providing first class customer service not only during the enquiry stage but for the life of the product purchased. Many businesses believe excellent customer service is going the extra
+                                            mile but we feel it should be expected as part of the standard provision.</p>
+                                    </div>
+                                    <div class="information_node" data-id="3">
+                                        <h2>In house design and manufacture</h2>
+                                        <p>Our in-house design and manufacturing capability ensures full control over quality and delivery times that allows us to be responsive to our customer’s particular needs.</p>
+                                    </div>
+                                    <div class="information_node" data-id="4">
+                                        <h2>Proven quality you can trust</h2>
+                                        <p>The high quality and functionality of our camera ranges have secured long established relationships as a trusted camera technology partner to Police, Parking Management, ITS Integrators, Civil Enforcement, Military
+                                            and Government.</p>
+                                    </div>
+                                    <div class="information_node" data-id="5">
+                                        <h2>Specialist independent ANPR supplier</h2>
+                                        <p>Over the past few years MAV Systems has grown in our range of products to become recognised as one of the most prestigious independent ANPR camera suppliers.</p>
+                                    </div>
+                                    <div class="information_node" data-id="6">
+                                        <h2>The MAV Experience</h2>
+                                        <p>At MAV we have always felt that providing the highest quality products is not enough, it is part of the customer experience which should, in its entirety, be simple, effective and fulfilling in all objectives. We
+                                            are proud of our partnerships and of the loyalty our partners give us and we know that it is the full MAV experience that drives such loyalty and so we strive to better it every day.</p>
+                                    </div>
+                                    <div class="information_node" data-id="7">
+                                        <h2>High Quality Cameras</h2>
+                                        <p>The wide range of ANPR cameras incorporate high-grade camera technology, innovative InfraRed (IR) pulsed LED design and multi-processor control circuitry, providing formidable ANPR/ALPR performance for professional
+                                            use in both fixed and mobile situations.</p>
+                                    </div>
+                                    <div class="information_node" data-id="8">
+                                        <h2>Built in UK to the highest worldwide standards</h2>
+                                        <p>Our camera systems are designed and built in Great Britain for operation in almost all environments where they are able to withstand extremes of shock, vibration and temperature.</p>
+                                    </div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="990.65" height="848" viewBox="0 0 990.65 848">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0dd0ff"/>
+      <stop offset="1" stop-color="#022e39" stop-opacity="0.569"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_34952" data-name="Group 34952" transform="translate(-454.73 -3100.355)">
+    <ellipse id="Ellipse_70" data-name="Ellipse 70" cx="274.5" cy="274" rx="274.5" ry="274" transform="translate(691 3250.355)" opacity="0.503" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_71" data-name="Ellipse 71" cx="160.206" cy="160.206" r="160.206" transform="translate(804.797 3371.27)" opacity="0.503" fill="url(#radial-gradient)"/>
+    <g id="Ellipse_72" data-name="Ellipse 72" transform="translate(722.006 3281.357)" fill="none" stroke="#0dd0ff" stroke-linecap="round" stroke-width="2" stroke-dasharray="0 5">
+      <circle cx="242.998" cy="242.998" r="242.998" stroke="none"/>
+      <circle cx="242.998" cy="242.998" r="241.998" fill="none"/>
+    </g>
+    <circle id="node_8" class="node_hover node" data-name="Ellipse 74" cx="7.12" cy="7.12" r="7.12" transform="translate(1053.238 3294.736)" fill="#fff"/>
+    <ellipse id="node_1" class="node_hover node" data-name="Ellipse 83" cx="7.12" cy="7.12" rx="7.12" ry="7.12" transform="translate(860.766 3294.736)" fill="#fff"/>
+    <circle id="node_5" class="node_hover node" data-name="Ellipse 76" cx="7.12" cy="7.12" r="7.12" transform="translate(1053.238 3739.736)" fill="#fff"/>
+    <ellipse id="node_4" class="node_hover node" data-name="Ellipse 86" cx="7.12" cy="7.12" rx="7.12" ry="7.12" transform="translate(853.645 3739.736)" fill="#fff"/>
+    <circle id="node_7" class="node_hover node" data-name="Ellipse 78" cx="7.12" cy="7.12" r="7.12" transform="translate(1188 3442.734)" fill="#fff"/>
+    <ellipse id="node_2" class="node_hover node" data-name="Ellipse 84" cx="7.12" cy="7.12" rx="7.12" ry="7.12" transform="translate(726.766 3442.736)" fill="#fff"/>
+    <circle id="node_6" class="node_hover node" data-name="Ellipse 82" cx="7.12" cy="7.12" r="7.12" transform="translate(1188 3590.734)" fill="#fff"/>
+    <ellipse id="node_3" class="node_hover" data-name="Ellipse 85" cx="7.12" cy="7.12" rx="7.12" ry="7.12" transform="translate(726.766 3590.736)" fill="#fff"/>
+    <text class="node_hover" id="node_8" data-name="Built in UK to the highest worldwide standards" transform="translate(1108.381 3306.857)" fill="#fff" font-size="16" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="0" y="0">Built in UK to the highest worldwide standards</tspan></text>
+    <text class="node_hover" id="node_1" data-name="Experience you can rely on" transform="translate(625.625 3291.857)" fill="#fff" font-size="16" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="0.36" y="15">Experience you can rely on</tspan></text>
+    <text class="node_hover" id="node_7" data-name="High Quality Cameras" transform="translate(1240.516 3451.977)" fill="#fff" font-size="16" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="0" y="0">High Quality Cameras</tspan></text>
+    <text class="node_hover" id="node_2" data-name="High Quality Service" transform="translate(505.73 3437.984)" fill="#fff" font-size="16" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="38.816" y="15">High Quality Service</tspan></text>
+    <text class="node_hover" id="node_6" data-name="The MAV Experience" transform="translate(1240.516 3601.977)" fill="#fff" font-size="16" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="0" y="0">The MAV Experience</tspan></text>
+    <text class="node_hover" id="node_3" data-name="In house design and manufacture" transform="translate(454.73 3586.977)" fill="#fff" font-size="16" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="0.872" y="15">In house design and manufacture</tspan></text>
+    <text class="node_hover" id="node_5" data-name="Specialist independent ANPR supplier" transform="translate(1107.617 3749.977)" fill="#fff" font-size="16" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="0" y="0">Specialist independent ANPR supplier</tspan></text>
+    <text class="node_hover" id="node_4" data-name="Proven quality you can trust" transform="translate(610.506 3734.977)" fill="#fff" font-size="16" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="0.28" y="15">Proven quality you can trust</tspan></text>
+    <path id="Path_2739" data-name="Path 2739" d="M0,19.414H201.887V-52.5H0Z" transform="translate(1172.381 3343.852)" fill="none"/>
+    <g id="mav_node_circle" data-name="Group 34908" transform="translate(862.527 3498.727)">
+      <path id="Path_7" data-name="Path 7" d="M-357.942,551.282c-3.255-5.484-8.258-8.054-14.744-8.258-6.459-.2-11.5,3.064-16.936,6.805v-5.167h-16.624v51.586h16.753c0-11.133.107-22.047-.075-32.959-.07-4.072,3.76-5.951,7.316-6.274a14.153,14.153,0,0,1,5.481.532c2.237.711,3.312,2.959,3.7,5.132a17.214,17.214,0,0,1,.228,3.043c-.011,9.147.035,18.3.056,27.447,0,1,0,1.99,0,3.137h17.382v-3.148q0-8.721-.032-17.44-.012-4.412-.016-8.823c0-2.277-.618-5.478.841-7.428,1.356-1.81-3.11-4.334-1.069-4.775" transform="translate(406.246 -542.596)" fill="#fff"/>
+      <path id="Path_8" data-name="Path 8" d="M-332.775,544.839a30.062,30.062,0,0,0-5.785-1.531,42.508,42.508,0,0,0-7.01-.448,63.7,63.7,0,0,0-8.062.6c-2.659.357-5.3.824-7.934,1.335-2.049.4-4.1.816-6.1,1.4v13.061c8.038-2.5,15.639-5.261,24.174-3.454,3.54.749,6.376,3.019,6.464,6.929,0,0-7.644.333-8.385.392-5.344.416-10.756,1.074-15.77,3.07-6.075,2.417-10.716,8.062-11.116,14.7-.4,6.685,3.9,12.706,9.8,15.609,6.314,3.1,13.872,2.011,19.93-1.174.639-.338,5.621-2.922,5.621-3.6v4.8c5.629,0,11.43.038,16.871.038V560.395C-320.077,552.539-325.975,547.391-332.775,544.839Zm-4.338,37.078a2.981,2.981,0,0,1-1.286,1.92c-3.808,2.583-8.06,3.553-12.424,2.047a6.845,6.845,0,0,1-3.8-3.8c-.787-2.42-.252-5.1,2.417-6.486a16.407,16.407,0,0,1,4.671-1.679c3.368-.575,6.784-.875,10.482-1.324C-337.053,575.821-336.975,578.874-337.113,581.917Z" transform="translate(463.419 -542.859)" fill="#fff"/>
+      <path id="Path_9" data-name="Path 9" d="M-342.734,566.9q0,4.411.016,8.823.02,8.722.032,17.44v3.148h-17.382c0-1.147,0-2.141,0-3.137-.021-9.15-.067-18.3-.054-27.447a17.471,17.471,0,0,0-.231-3.043c-.384-2.173-1.458-4.421-3.7-5.132a14.153,14.153,0,0,0-5.481-.532c-3.556.322-7.383,2.2-7.316,6.274.183,10.912.075,21.826.075,32.959h-16.753V544.662c3.166,0,3.8,8.154,7.525,9.437,2.661.919,7.217-3.08,9.1-4.27,5.438-3.741,10.477-7.007,16.936-6.805,6.486.2,11.489,2.774,14.744,8.258C-342.839,554.9-342.522,560.626-342.734,566.9Z" transform="translate(427.693 -542.596)" fill="#fff"/>
+      <path id="Path_10" data-name="Path 10" d="M-308.4,543.531a5.556,5.556,0,0,0-5.2,3.6l-8.96,27.66-8.957-27.66a5.556,5.556,0,0,0-5.2-3.6h-14.736l19.538,51.906H-313.2l19.538-51.906Z" transform="translate(498.61 -541.725)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="supporting-product">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h2>Supporting a wide range of sectors for many years</h2>
+
+                                    <p>MAV have been supporting a wide range of sectors for many years and are able to meet the needs of varying solutions through the provision of bespoke products. Being able to seamlessly fit into existing systems or provide
+                                        a full solution from the start, has led to a provision of ANPR technology across multiple sectors throughout the world.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-fluid supporting-image">
+                            <img data-id="image_1" data-src="https://www.anprcameras.com/wp-content/uploads/2021/03/smart-cities-section.jpg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.anprcameras.com/wp-content/uploads/2021/03/smart-cities-section.jpg" data-id="image_1"></noscript>
+                            <img data-id="image_2" data-src="https://www.anprcameras.com/wp-content/uploads/2020/03/shutterstock_732423391-1.jpg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.anprcameras.com/wp-content/uploads/2020/03/shutterstock_732423391-1.jpg" data-id="image_2"></noscript>
+                            <img data-id="image_3" data-src="https://www.anprcameras.com/wp-content/uploads/2021/03/police-and-security-section.jpg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.anprcameras.com/wp-content/uploads/2021/03/police-and-security-section.jpg" data-id="image_3"></noscript>
+                            <img data-id="image_4" data-src="https://www.anprcameras.com/wp-content/uploads/2021/03/civil-enforcement-section.jpg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.anprcameras.com/wp-content/uploads/2021/03/civil-enforcement-section.jpg" data-id="image_4"></noscript>
+                        </div>
+
+                        <div class="product-tabbed-wrapper">
+                            <div class="row tabbed-buttons">
+                                <div class="three columns">
+                                    <span class="tab active" data-id="1">
+								Smart Cities	
+							</span>
+                                </div>
+                                <div class="three columns">
+                                    <span class="tab " data-id="2">
+								Car Parking Management	
+							</span>
+                                </div>
+                                <div class="three columns">
+                                    <span class="tab " data-id="3">
+								Police &amp; Security	
+							</span>
+                                </div>
+                                <div class="three columns">
+                                    <span class="tab " data-id="4">
+								Civil Enforcement	
+							</span>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="row tabbed-content">
+                                <div class="twelve columns">
+
+
+                                    <div class="content" id="content_1">
+                                        <p>Smart cities are not just our future but a very much the present. As such, MAV support governments throughout the world with the provision of superior Intelligent ANPR cameras that are re-defining traffic management.
+                                            The concept of smart cities is to provide real-time information to transport departments and commuters which enables the reduction of traffic delays and reduces risks to the thousands of commuters on the roads
+                                            and other forms of transport every day. ANPR cameras are integral to the success of these traffic management systems and, as with everything, the highest quality camera is needed to provide the highest quality
+                                            results. This is why MAV’s range of Intelligent ANPR Cameras have been chosen over the leading competitors in many countries; quality counts for everything.</p>
+                                        <a href="https://www.anprcameras.com/anpr-solutions/smart-cities/">Learn more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+
+
+                                    <div class="content" id="content_2">
+                                        <p>Efficient Parking Management relies upon the seamless integration of superior ANPR technology to ensure the highest performance, accuracy and functionality. The IQ and IQX high specification intelligent ANPR camera
+                                            ranges provide all parking management users with these benefits as standard but offer further flexibility, reliability and productivity through the combination of specialist experience, quality control and continual
+                                            product evaluation and advancement.</p>
+                                        <a href="https://www.anprcameras.com/anpr-solutions/car-park-management/">Learn more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+
+
+                                    <div class="content" id="content_3">
+                                        <p>MAV systems have been supporting Police Forces worldwide in the use of ANPR technology for more than 15 years. Such longevity has only been possible because of our unique understanding of Police requirements as
+                                            well as the delivery of superior ANPR cameras that offer excellence in quality, performance, functionality, accuracy and flexibility.</p>
+                                        <a href="https://www.anprcameras.com/anpr-solutions/police-security/">Learn more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+
+
+                                    <div class="content" id="content_4">
+                                        <p>Government authorities have the responsibility to enforce measures that protect drivers, pedestrians and support efficient transport networks. As part of these responsibilities they require ANPR technological support
+                                            in identifying drivers that jeopardise safety and cause obstructions to transport pathways. These enforcement measures have been specifically identified for Bus Lane infringements, Red Light violations and Box
+                                            Junction infringements.</p>
+                                        <a href="https://www.anprcameras.com/anpr-solutions/civil-enforcement/">Learn more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" latest-news">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h2>The latest from our newsroom
+                                        <span class="right-align"> 
+						<span class="left-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                                        <span class="right-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                        </span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row" id="latest-news-slider">
+
+                                <div class="six columns">
+                                    <a href="https://www.anprcameras.com/compact-iqx-range-new-products/">
+                                        <div class="shadow">
+                                            <div class="img-wrapper">
+                                                <img width="1097" height="353" alt="Compact ANPR IQX cameras" decoding="async" data-srcset="https://www.anprcameras.com/wp-content/uploads/2022/07/Compact-ANPR-cameras.png 1097w, https://www.anprcameras.com/wp-content/uploads/2022/07/Compact-ANPR-cameras-300x97.png 300w, https://www.anprcameras.com/wp-content/uploads/2022/07/Compact-ANPR-cameras-1024x330.png 1024w, https://www.anprcameras.com/wp-content/uploads/2022/07/Compact-ANPR-cameras-768x247.png 768w"
+                                                    data-src="https://www.anprcameras.com/wp-content/uploads/2022/07/Compact-ANPR-cameras.png" data-sizes="(max-width: 1097px) 100vw, 1097px" class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyload"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img width="1097" height="353" src="https://www.anprcameras.com/wp-content/uploads/2022/07/Compact-ANPR-cameras.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Compact ANPR IQX cameras" decoding="async" srcset="https://www.anprcameras.com/wp-content/uploads/2022/07/Compact-ANPR-cameras.png 1097w, https://www.anprcameras.com/wp-content/uploads/2022/07/Compact-ANPR-cameras-300x97.png 300w, https://www.anprcameras.com/wp-content/uploads/2022/07/Compact-ANPR-cameras-1024x330.png 1024w, https://www.anprcameras.com/wp-content/uploads/2022/07/Compact-ANPR-cameras-768x247.png 768w" sizes="(max-width: 1097px) 100vw, 1097px" /></noscript>                                                </div>
+                                            <div class="pad">
+                                                <span class="category">NEWS</span>
+                                                <h3>Compact IQX ANPR Range</h3>
+                                                <span class="date">Jul 21, 2022</span>
+                                                <div class="content">
+                                                    <p>As part of MAV’s continual progression plans and in line with out partners ANPR requirements,&hellip;</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="six columns">
+                                    <a href="https://www.anprcameras.com/first-look-low-light-alpr-cameras/">
+                                        <div class="shadow">
+                                            <div class="img-wrapper">
+                                                <img width="699" height="703" alt="IQ ALPR Camera" decoding="async" loading="lazy" data-srcset="https://www.anprcameras.com/wp-content/uploads/2021/09/Group-35047.png 699w, https://www.anprcameras.com/wp-content/uploads/2021/09/Group-35047-298x300.png 298w, https://www.anprcameras.com/wp-content/uploads/2021/09/Group-35047-150x150.png 150w"
+                                                    data-src="https://www.anprcameras.com/wp-content/uploads/2021/09/Group-35047.png" data-sizes="(max-width: 699px) 100vw, 699px" class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyload"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img width="699" height="703" src="https://www.anprcameras.com/wp-content/uploads/2021/09/Group-35047.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="IQ ALPR Camera" decoding="async" loading="lazy" srcset="https://www.anprcameras.com/wp-content/uploads/2021/09/Group-35047.png 699w, https://www.anprcameras.com/wp-content/uploads/2021/09/Group-35047-298x300.png 298w, https://www.anprcameras.com/wp-content/uploads/2021/09/Group-35047-150x150.png 150w" sizes="(max-width: 699px) 100vw, 699px" /></noscript>                                                </div>
+                                            <div class="pad">
+                                                <span class="category">NEWS</span>
+                                                <h3>First Look: Low-Light ALPR Cameras</h3>
+                                                <span class="date">Apr 19, 2022</span>
+                                                <div class="content">
+                                                    <p>MAV Systems Ltd. provides Automatic License Plate Recognition (ALPR) cameras support to police systems around&hellip;</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="six columns">
+                                    <a href="https://www.anprcameras.com/enhanced-zero-light-anpr-overview-performance/">
+                                        <div class="shadow">
+                                            <div class="img-wrapper">
+                                                <img width="1500" height="500" alt="Intelligent ANPR series IQX" decoding="async" loading="lazy" data-srcset="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg 1500w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-300x100.jpg 300w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-1024x341.jpg 1024w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-768x256.jpg 768w"
+                                                    data-src="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg" data-sizes="(max-width: 1500px) 100vw, 1500px" class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyload"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img width="1500" height="500"   alt="Intelligent ANPR series IQX" decoding="async" loading="lazy" data-srcset="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg 1500w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-300x100.jpg 300w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-1024x341.jpg 1024w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-768x256.jpg 768w"  data-src="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg" data-sizes="(max-width: 1500px) 100vw, 1500px" class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img width="1500" height="500" src="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Intelligent ANPR series IQX" decoding="async" loading="lazy" srcset="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg 1500w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-300x100.jpg 300w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-1024x341.jpg 1024w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-768x256.jpg 768w" sizes="(max-width: 1500px) 100vw, 1500px" /></noscript></noscript>
+                                            </div>
+                                            <div class="pad">
+                                                <span class="category">NEWS</span>
+                                                <h3>Enhanced Zero Light ANPR &#038; Overview Performance</h3>
+                                                <span class="date">Aug 10, 2021</span>
+                                                <div class="content">
+                                                    <p>Quality should never be compromised, ANPR cameras should offer superior performance no matter the lighting&hellip;</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="six columns">
+                                    <a href="https://www.anprcameras.com/enhancing-the-intelligence-of-edge-based-anpr-cameras/">
+                                        <div class="shadow">
+                                            <div class="img-wrapper">
+                                                <img width="1864" height="944" alt="" decoding="async" loading="lazy" data-srcset="https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras.png 1864w, https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras-300x152.png 300w, https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras-1024x519.png 1024w, https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras-768x389.png 768w, https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras-1536x778.png 1536w"
+                                                    data-src="https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras.png" data-sizes="(max-width: 1864px) 100vw, 1864px" class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                /><noscript><img width="1864" height="944" src="https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras.png 1864w, https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras-300x152.png 300w, https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras-1024x519.png 1024w, https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras-768x389.png 768w, https://www.anprcameras.com/wp-content/uploads/2018/11/Cameras-1536x778.png 1536w" sizes="(max-width: 1864px) 100vw, 1864px" /></noscript>                                                </div>
+                                            <div class="pad">
+                                                <span class="category">NEWS</span>
+                                                <h3>Enhancing the intelligence of edge-based ANPR cameras</h3>
+                                                <span class="date">Jun 25, 2021</span>
+                                                <div class="content">
+                                                    <p>The IQX range of intelligent ANPR cameras offer the next generation of ANPR technology to&hellip;</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="six columns">
+                                    <a href="https://www.anprcameras.com/mav-systems-enhance-the-intelligence-of-edge-based-anpr-cameras/">
+                                        <div class="shadow">
+                                            <div class="img-wrapper">
+                                                <img width="1500" height="500" alt="Intelligent ANPR series IQX" decoding="async" loading="lazy" data-srcset="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg 1500w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-300x100.jpg 300w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-1024x341.jpg 1024w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-768x256.jpg 768w"
+                                                    data-src="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg" data-sizes="(max-width: 1500px) 100vw, 1500px" class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyload"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img width="1500" height="500"   alt="Intelligent ANPR series IQX" decoding="async" loading="lazy" data-srcset="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg 1500w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-300x100.jpg 300w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-1024x341.jpg 1024w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-768x256.jpg 768w"  data-src="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg" data-sizes="(max-width: 1500px) 100vw, 1500px" class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img width="1500" height="500" src="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Intelligent ANPR series IQX" decoding="async" loading="lazy" srcset="https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range.jpg 1500w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-300x100.jpg 300w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-1024x341.jpg 1024w, https://www.anprcameras.com/wp-content/uploads/2021/05/The-New-IQX-range-768x256.jpg 768w" sizes="(max-width: 1500px) 100vw, 1500px" /></noscript></noscript>
+                                            </div>
+                                            <div class="pad">
+                                                <span class="category">NEWS</span>
+                                                <h3>MAV Systems enhance the intelligence of edge-based ANPR cameras</h3>
+                                                <span class="date">May 04, 2021</span>
+                                                <div class="content">
+                                                    <p>MAV Systems Ltd The range of IQX ANPR cameras include products to meet stand-alone system&hellip;</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="six columns">
+                                    <a href="https://www.anprcameras.com/new-website-new-brand-new-anpr-cameras/">
+                                        <div class="shadow">
+                                            <div class="img-wrapper">
+                                                <img width="1713" height="727" alt="IQX ANPR cameras" decoding="async" loading="lazy" data-srcset="https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2.png 1713w, https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2-300x127.png 300w, https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2-1024x435.png 1024w, https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2-768x326.png 768w, https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2-1536x652.png 1536w"
+                                                    data-src="https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2.png" data-sizes="(max-width: 1713px) 100vw, 1713px" class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyload"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img width="1713" height="727" src="https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="IQX ANPR cameras" decoding="async" loading="lazy" srcset="https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2.png 1713w, https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2-300x127.png 300w, https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2-1024x435.png 1024w, https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2-768x326.png 768w, https://www.anprcameras.com/wp-content/uploads/2021/03/IQX-range-2-1536x652.png 1536w" sizes="(max-width: 1713px) 100vw, 1713px" /></noscript>                                                </div>
+                                            <div class="pad">
+                                                <span class="category">NEWS</span>
+                                                <h3>New website, new brand, new ANPR cameras</h3>
+                                                <span class="date">Mar 24, 2021</span>
+                                                <div class="content">
+                                                    <p>Lockdown has been a challenging time for us all and we all find ourselves in&hellip;</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="six columns">
+                                    <div class="final-blog-post">
+                                        <div class="align-center">
+                                            <h2>Visit the news room for more posts</h2>
+                                            <a href="https://www.anprcameras.com/category/news/">Go to Newsroom</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="mav-support-app">
+                            <div class="row">
+                                <div class="six columns">
+                                    <div class="align-centerr rellax" data-rellax-speed="0">
+                                        <h2>Support at your fingertips,<br>Wherever you are</h2>
+
+                                        <p>Providing consistent support to our partners is a key principle at the core of our business values. As such, MAV systems have developed a support App to offer all partners access to a wide range of technical documentation,
+                                            providing guidance in the set-up, use and update of our wide range of ANPR cameras. The App also offers immediate access to a variety of communication channels for additional support as well as an extended library
+                                            of product specific documents and resources. The App is now available from the App Store or Google Play.</p>
+
+                                        <span class="download-app">Download the MAV Support App</span>
+
+                                        <a href="https://apps.apple.com/gb/app/mav-support/id1587114271"><img  data-src='https://www.anprcameras.com/wp-content/themes/mav-systems/images/ios-app.svg' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/ios-app.svg"></noscript></a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.mav.support&amp;hl=en&amp;gl=US"><img  data-src='https://www.anprcameras.com/wp-content/themes/mav-systems/images/google-app.svg' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/google-app.svg"></noscript></a>
+                                    </div>
+                                </div>
+                                <div class="one columns"></div>
+                                <div class="five columns">
+                                    <img data-rellax-speed="4" data-src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/app.png" class="app rellax lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="app rellax" data-rellax-speed="4" src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/app.png"></noscript>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="final-product-cta">
+                            <div class="row">
+                                <div class="two columns"></div>
+                                <div class="eight columns">
+                                    <div class="row">
+                                        <div class="four columns">
+                                            <img data-src='https://www.anprcameras.com/wp-content/themes/mav-systems/images/headset.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/headset.png"></noscript>
+                                        </div>
+                                        <div class="eight columns">
+                                            <div class="align-center">
+                                                <img id="footer-logo" data-src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/mav-logo-grey.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/mav-logo-grey.svg" id="footer-logo"></noscript>
+                                                <h2>Support Centre</h2>
+                                                <span class="small-text">First class customer service</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="twelve columns text-align-center footer-info">
+
+                                    <a class="gradient-border-btn" href="https://www.anprcameras.com/contact-us"><span>Get in touch to discuss your perfect ANPR solution</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- #post-7 -->
+
+                </main>
+                <!-- #main -->
+            </div>
+            <!-- #primary -->
+
+
+        </div>
+        <!-- #content -->
+
+        <div class="notification-enquiry">
+            <img data-src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/success.svg" class="success lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="success" src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/success.svg"></noscript>
+            <h2 class="success">Enquiry Successful</h2>
+            <p><strong>Thank you for enquiring.</strong></p>
+            <p>Our sales team will be in touch to discuss your perfect ANPR Solution. We aim to respond to all enquiries within 24 hours of receipt.</p>
+        </div>
+
+        <footer id="colophon" class="site-footer">
+            <div class="row">
+                <div class="twelve columns">
+                    <hr>
+                    <img data-src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/logo.svg" class="footer-logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/logo.svg" class="footer-logo"></noscript>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twenty-percent columns">
+                    <header>
+                        <h2>About us</h2>
+                    </header>
+                    <section id="nav_menu-2" class="widget widget_nav_menu">
+                        <div class="menu-footer-about-us-container">
+                            <ul id="menu-footer-about-us" class="menu">
+                                <li id="menu-item-4491" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4491"><a href="https://www.anprcameras.com/about-us/understanding-anpr/">Understanding ANPR</a></li>
+                                <li id="menu-item-4637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4637"><a href="https://www.anprcameras.com/about-us/mav-technology/">MAV Technology</a></li>
+                                <li id="menu-item-4494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4494"><a href="https://www.anprcameras.com/about-us/">The Company</a></li>
+                                <li id="menu-item-4495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4495"><a href="https://www.anprcameras.com/about-us/the-company/">The Company</a></li>
+                                <li id="menu-item-4496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4496"><a href="https://www.anprcameras.com/gdpr/">Data Protection (GDPR)</a></li>
+                                <li id="menu-item-4720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4720"><a href="https://www.anprcameras.com/conflict-minerals-policy/">Conflict Minerals Policy</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <ul class="footer-social">
+                        <li><a href="https://twitter.com/anprcameras"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/mav-systems-limited/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="twenty-percent columns">
+                    <header>
+                        <h2>ANPR Products</h2>
+                    </header>
+                    <section id="nav_menu-3" class="widget widget_nav_menu">
+                        <div class="menu-footer-anpr-products-container">
+                            <ul id="menu-footer-anpr-products" class="menu">
+                                <li id="menu-item-4620" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-4620"><a href="https://www.anprcameras.com/anpr-products/analogue-cameras/">Analogue Cameras</a></li>
+                                <li id="menu-item-4621" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-4621"><a href="https://www.anprcameras.com/anpr-products/hd-cameras/">HD Cameras</a></li>
+                                <li id="menu-item-4622" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-4622"><a href="https://www.anprcameras.com/anpr-products/mav-iq-intelligent-anpr-cameras/">Intelligent ANPR Cameras | MAV IQ Range</a></li>
+                                <li id="menu-item-4623" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-4623"><a href="https://www.anprcameras.com/anpr-products/iq-range/">IQ Range</a></li>
+                                <li id="menu-item-4624" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-4624"><a href="https://www.anprcameras.com/anpr-products/iqx-range/">IQ:X Range</a></li>
+                                <li id="menu-item-4625" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-4625"><a href="https://www.anprcameras.com/anpr-products/rapier-range/">Rapier Range</a></li>
+                                <li id="menu-item-4626" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-4626"><a href="https://www.anprcameras.com/anpr-products/tailored-cameras/">Tailored Cameras</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="twenty-percent columns">
+                    <header>
+                        <h2>ANPR Solutions</h2>
+                    </header>
+                    <section id="nav_menu-4" class="widget widget_nav_menu">
+                        <div class="menu-footer-anpr-solutions-container">
+                            <ul id="menu-footer-anpr-solutions" class="menu">
+                                <li id="menu-item-4505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4505"><a href="https://www.anprcameras.com/anpr-solutions/car-park-management/">Car Park Management</a></li>
+                                <li id="menu-item-4506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4506"><a href="https://www.anprcameras.com/anpr-solutions/civil-enforcement/">Civil Enforcement</a></li>
+                                <li id="menu-item-4507" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4507"><a href="https://www.anprcameras.com/anpr-solutions/police-security/">Police &#038; Security</a></li>
+                                <li id="menu-item-4508" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4508"><a href="https://www.anprcameras.com/anpr-solutions/smart-cities/">Smart Cities</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="twenty-percent columns">
+                    <header>
+                        <h2>Media</h2>
+                    </header>
+                    <section id="nav_menu-5" class="widget widget_nav_menu">
+                        <div class="menu-footer-media-container">
+                            <ul id="menu-footer-media" class="menu">
+                                <li id="menu-item-4627" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4627"><a href="https://www.anprcameras.com/category/news/">News</a></li>
+                                <li id="menu-item-4628" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4628"><a href="https://www.anprcameras.com/category/press-releases/">Press Releases</a></li>
+                                <li id="menu-item-4629" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4629"><a href="https://www.anprcameras.com/category/blog/">Blog</a></li>
+                                <li id="menu-item-4510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4510"><a href="https://www.anprcameras.com/media/">Media</a></li>
+                                <li id="menu-item-4630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4630"><a href="https://www.anprcameras.com/videos/">Videos</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="twenty-percent columns">
+                    <header>
+                        <h2>Support</h2>
+                    </header>
+                    <section id="nav_menu-6" class="widget widget_nav_menu">
+                        <div class="menu-footer-support-container">
+                            <ul id="menu-footer-support" class="menu">
+                                <li id="menu-item-4514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4514"><a href="https://www.anprcameras.com/support/faqs/">FAQ</a></li>
+                                <li id="menu-item-4653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4653"><a href="https://www.anprcameras.com/support/resources/">Resources</a></li>
+                                <li id="menu-item-4948" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4948"><a href="https://www.anprcameras.com/partner-resources/">Partner Resources</a></li>
+                                <li id="menu-item-4652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4652"><a href="https://www.anprcameras.com/support/rma/">RMA Form</a></li>
+                                <li id="menu-item-4678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4678"><a href="https://www.anprcameras.com/support/part-numbers/">Part Numbers</a></li>
+                                <li id="menu-item-4664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4664"><a href="https://www.anprcameras.com/support/anpralpr-definitions/">ANPR/ALPR Definitions</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="twelve columns">
+                    <hr>
+                </div>
+            </div>
+            <div class="bottom-half">
+                <div class="row">
+                    <div class="six columns">
+                        <div class="align-center">
+                            <p>&copy; 2023 MAV Systems Limited</p>
+                        </div>
+                    </div>
+                    <div class="six columns text-right">
+                        <a target="_blank" href="https://traffic.group">
+						<span class="part-of">Part of</span>
+						<img   data-src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/trafficgroup.svg" class="traffic-group lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.anprcameras.com/wp-content/themes/mav-systems/images/trafficgroup.svg" class="traffic-group"></noscript>
+					</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- #colophon -->
+    </div>
+    <!-- #page -->
+
+    <link rel='stylesheet' id='gravity_forms_theme_reset-css' href='https://www.anprcameras.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min.css?ver=2.7.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='gravity_forms_theme_foundation-css' href='https://www.anprcameras.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css?ver=2.7.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='gravity_forms_theme_framework-css' href='https://www.anprcameras.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-framework.min.css?ver=2.7.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='gravity_forms_orbital_theme-css' href='https://www.anprcameras.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-orbital-theme.min.css?ver=2.7.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='gforms_reset_css-css' href='https://www.anprcameras.com/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.7.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='gforms_formsmain_css-css' href='https://www.anprcameras.com/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.7.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='gforms_ready_class_css-css' href='https://www.anprcameras.com/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.7.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='gforms_browsers_css-css' href='https://www.anprcameras.com/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.7.6' type='text/css' media='all' />
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-content/themes/mav-systems/js/rellax.min.js?ver=1684993872' id='rellax-js-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-content/themes/mav-systems/js/slick.min.js?ver=1684993872' id='slick-js-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-content/themes/mav-systems/js/skip-link-focus-fix.js?ver=20151215' id='mav-systems-skip-link-focus-fix-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-content/themes/mav-systems/js/custom.js?ver=1684993872' id='mav-systems-custom-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-content/themes/mav-systems/js/video.js?ver=1684993872' id='video-handler-js'></script>
+    <script type='text/javascript' id='gforms_recaptcha_recaptcha-js-extra'>
+        /* <![CDATA[ */
+        var gforms_recaptcha_recaptcha_strings = {
+            "site_key": "6LdZ8VYdAAAAAP22sjc2iMZ-E-_39RSZhugwDxbr",
+            "ajaxurl": "https:\/\/www.anprcameras.com\/wp-admin\/admin-ajax.php",
+            "nonce": "4e183bb1db"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LdZ8VYdAAAAAP22sjc2iMZ-E-_39RSZhugwDxbr&#038;ver=1.1' id='gforms_recaptcha_recaptcha-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.12.6' id='smush-lazy-load-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca' id='wp-dom-ready-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5' id='wp-hooks-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae' id='wp-i18n-js'></script>
+    <script type='text/javascript' id='wp-i18n-js-after'>
+        wp.i18n.setLocaleData({
+            'text direction\u0004ltr': ['ltr']
+        });
+    </script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-includes/js/dist/a11y.min.js?ver=ecce20f002eda4c19664' id='wp-a11y-js'></script>
+    <script type='text/javascript' defer='defer' src='https://www.anprcameras.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.6' id='gform_json-js'></script>
+    <script type='text/javascript' id='gform_gravityforms-js-extra'>
+        /* <![CDATA[ */
+        var gform_i18n = {
+            "datepicker": {
+                "days": {
+                    "monday": "Mo",
+                    "tuesday": "Tu",
+                    "wednesday": "We",
+                    "thursday": "Th",
+                    "friday": "Fr",
+                    "saturday": "Sa",
+                    "sunday": "Su"
+                },
+                "months": {
+                    "january": "January",
+                    "february": "February",
+                    "march": "March",
+                    "april": "April",
+                    "may": "May",
+                    "june": "June",
+                    "july": "July",
+                    "august": "August",
+                    "september": "September",
+                    "october": "October",
+                    "november": "November",
+                    "december": "December"
+                },
+                "firstDay": 1,
+                "iconText": "Select date"
+            }
+        };
+        var gf_legacy_multi = [];
+        var gform_gravityforms = {
+            "strings": {
+                "invalid_file_extension": "This type of file is not allowed. Must be one of the following:",
+                "delete_file": "Delete this file",
+                "in_progress": "in progress",
+                "file_exceeds_limit": "File exceeds size limit",
+                "illegal_extension": "This type of file is not allowed.",
+                "max_reached": "Maximum number of files reached",
+                "unknown_error": "There was a problem while saving the file on the server",
+                "currently_uploading": "Please wait for the uploading to complete",
+                "cancel": "Cancel",
+                "cancel_upload": "Cancel this upload",
+                "cancelled": "Cancelled"
+            },
+            "vars": {
+                "images_url": "https:\/\/www.anprcameras.com\/wp-content\/plugins\/gravityforms\/images"
+            }
+        };
+        var gf_global = {
+            "gf_currency_config": {
+                "name": "Pound Sterling",
+                "symbol_left": "&#163;",
+                "symbol_right": "",
+                "symbol_padding": " ",
+                "thousand_separator": ",",
+                "decimal_separator": ".",
+                "decimals": 2,
+                "code": "GBP"
+            },
+            "base_url": "https:\/\/www.anprcameras.com\/wp-content\/plugins\/gravityforms",
+            "number_formats": [],
+            "spinnerUrl": "https:\/\/www.anprcameras.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg",
+            "version_hash": "47929e2f4c3ab5328b1816633c7169bb",
+            "strings": {
+                "newRowAdded": "New row added.",
+                "rowRemoved": "Row removed",
+                "formSaved": "The form has been saved.  The content contains the link to return and complete the form."
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' defer='defer' src='https://www.anprcameras.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.6' id='gform_gravityforms-js'></script>
+    <script type='text/javascript' defer='defer' src='https://www.anprcameras.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.7.6' id='gform_placeholder-js'></script>
+    <script type='text/javascript' defer='defer' src='https://www.anprcameras.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=3f33f1b56bb5e5da665be32ebbe89543' id='gform_gravityforms_utils-js'></script>
+    <script type='text/javascript' defer='defer' src='https://www.anprcameras.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=1a5749916bf8ca4822137a83fec75744' id='gform_gravityforms_theme_vendors-js'></script>
+    <script type='text/javascript' id='gform_gravityforms_theme-js-extra'>
+        /* <![CDATA[ */
+        var gform_theme_config = {
+            "common": {
+                "form": {
+                    "honeypot": {
+                        "version_hash": "47929e2f4c3ab5328b1816633c7169bb"
+                    }
+                }
+            },
+            "hmr_dev": "",
+            "public_path": "https:\/\/www.anprcameras.com\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' defer='defer' src='https://www.anprcameras.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=c0c5d795571af887e62fb8d599d4d553' id='gform_gravityforms_theme-js'></script>
+    <script type='text/javascript' src='https://www.anprcameras.com/wp-content/plugins/gravityformsrecaptcha/js/frontend.min.js?ver=1.1' id='gforms_recaptcha_frontend-js'></script>
+    <script type="text/javascript">
+        gform.initializeOnLoaded(function() {
+            jQuery(document).on('gform_post_render', function(event, formId, currentPage) {
+                if (formId == 3) {
+                    if (typeof Placeholders != 'undefined') {
+                        Placeholders.enable();
+                    }
+                }
+            });
+            jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit) {})
+        });
+    </script>
+    <script type="text/javascript">
+        gform.initializeOnLoaded(function() {
+            jQuery(document).trigger('gform_post_render', [3, 1]);
+            gform.utils.trigger({
+                event: 'gform/postRender',
+                native: false,
+                data: {
+                    formId: 3,
+                    currentPage: 1
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

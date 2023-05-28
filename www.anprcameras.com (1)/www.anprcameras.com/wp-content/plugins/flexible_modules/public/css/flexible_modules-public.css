@@ -1,0 +1,12 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.accordian-wrapper .question:hover {
+    cursor: pointer;
+}
+
+.accordian-wrapper .answer {
+    display: none;
+}
